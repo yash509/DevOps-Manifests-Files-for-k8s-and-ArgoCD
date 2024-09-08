@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lms-system-service
+  name: pe-wa-service
+  namespace: web-app
 spec:
   selector:
-    app: lms-system
+    app: pe-wa
   ports:
     - protocol: TCP
       port: 5000
